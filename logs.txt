@@ -1,0 +1,365 @@
+
+Monika@DESKTOP-FF60E46 MINGW64 ~
+$ pwd
+/c/Users/Monika
+
+Monika@DESKTOP-FF60E46 MINGW64 ~
+$ cd Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012/
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ ls
+README.md  README.md.docx  README.md.txt
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git add README.md
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) d6d0cca] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ ls
+README.md  SI_2023_lab1_186012.iml  src/
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git add .
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git commit -m "Add java class"
+[master aaf532b] Add java class
+ 7 files changed, 90 insertions(+)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/runConfigurations.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 SI_2023_lab1_186012.iml
+ create mode 100644 src/SILab1.java
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git push -u repo master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (14/14), 2.21 KiB | 282.00 KiB/s, done.
+Total 14 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MSpasovska21/SI_2023_lab1_186012.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git status
+On branch master
+Your branch is up to date with 'repo/master'.
+
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git branch bug1
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git status
+On branch master
+Your branch is up to date with 'repo/master'.
+
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git branch bug2
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git status
+On branch master
+Your branch is up to date with 'repo/master'.
+
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git branch bug3
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git status
+On branch master
+Your branch is up to date with 'repo/master'.
+
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git branch
+  bug1
+  bug2
+  bug3
+* master
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git status
+On branch bug1
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git status
+On branch bug1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git commit -a -m "Fix wrong loop for reading"
+[bug1 dac3290] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git status
+On branch bug1
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug2)
+$ git status
+On branch bug2
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug2)
+$ git commit -a -m "Fix wrong condition in filterOddNumbers"
+[bug2 5d6a72f] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git status
+On branch bug3
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git status
+On branch bug3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git commit -a -m "Fix method sumEvenNumbers"
+[bug3 fa00a10] Fix method sumEvenNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git status
+On branch bug3
+nothing to commit, working tree clean
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git push -u repo master
+Everything up-to-date
+branch 'master' set up to track 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git merge bug1
+Updating aaf532b..dac3290
+Fast-forward
+ src/SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git push -u repo master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 357 bytes | 119.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/MSpasovska21/SI_2023_lab1_186012.git
+   aaf532b..dac3290  master -> master
+branch 'master' set up to track 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git merge bug2
+Auto-merging src/SILab1.java
+hint: Waiting for your editor to close the file...       1 [sig] bash 952! sigpacket::process: Suppressing signal 18 to win32 process (pid 13560)
+                                                                 2628548 [sig] bash 952! sigpacket::process: Suppressing signal 18 to win32 process (pid 13560)
+                                                                               2823366 [sig] bash 952! sigpacket::process: Suppressing signal 18 to win32 process (pid 13560)
+             3597662 [sig] bash 952! sigpacket::process: Suppressing signal 18 to win32 process (pid 13560)
+                           4288087 [sig] bash 952! sigpacket::process: Suppressing signal 18 to win32 process (pid 13560)
+                                         5535360 [sig] bash 952! sigpacket::process: Suppressing signal 18 to win32 process (pid 13560)
+                                                       48333814 [sig] bash 952! sigpacket::process: Suppressing signal 18 to win32 process (pid 13560)
+Merge made by the 'ort' strategy.
+ src/SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git merge bug2 -m "bug fix odd num"
+Already up to date.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git push -u repo master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 738 bytes | 369.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/MSpasovska21/SI_2023_lab1_186012.git
+   dac3290..12594eb  master -> master
+branch 'master' set up to track 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git push -u repo bug1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/MSpasovska21/SI_2023_lab1_186012/pull/new/bug1
+remote:
+To https://github.com/MSpasovska21/SI_2023_lab1_186012.git
+ * [new branch]      bug1 -> bug1
+branch 'bug1' set up to track 'repo/bug1'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug2)
+$ git push -u repo bug2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/MSpasovska21/SI_2023_lab1_186012/pull/new/bug2
+remote:
+To https://github.com/MSpasovska21/SI_2023_lab1_186012.git
+ * [new branch]      bug2 -> bug2
+branch 'bug2' set up to track 'repo/bug2'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git push -u repo bug3
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 360 bytes | 360.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/MSpasovska21/SI_2023_lab1_186012/pull/new/bug3
+remote:
+To https://github.com/MSpasovska21/SI_2023_lab1_186012.git
+ * [new branch]      bug3 -> bug3
+branch 'bug3' set up to track 'repo/bug3'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git checkout bug3
+Switched to branch 'bug3'
+Your branch is up to date with 'repo/bug3'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git merge bug3 -m "bug fix even num"
+Already up to date.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git merge bug3 -m "bug fix even num"
+Auto-merging src/SILab1.java
+Merge made by the 'ort' strategy.
+ src/SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git push -u repo master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 378 bytes | 378.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/MSpasovska21/SI_2023_lab1_186012.git
+   12594eb..68e3aad  master -> master
+branch 'master' set up to track 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git rebase master bug3
+Successfully rebased and updated refs/heads/bug3.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git merge bug3 -m "bug fix even num"
+Already up to date.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git push -u repo master
+Everything up-to-date
+branch 'master' set up to track 'repo/master'.
+
+Monika@DESKTOP-FF60E46 MINGW64 ~/Desktop/fakultet/SI/labs/lab1-new/SI_2023_lab1_186012 (master)
+$ git push -u repo
